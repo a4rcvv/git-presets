@@ -3,6 +3,10 @@ name: Test
 on:
   pull_request:
     branches: [main]
+    paths:
+      - src/**
+      - tests/**
+      - .github/workflows/test.yml
 
 jobs:
   test:
