@@ -24,7 +24,7 @@ jobs:
           - ubuntu-latest
           - macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v3
       - name: Install tox
         run: uv tool install --python-preference only-managed --python ${{ matrix.env }} tox --with tox-uv --with tox-gh
